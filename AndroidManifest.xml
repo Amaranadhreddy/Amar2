@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tms.govt.tmsticketverification">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="55566c8d45c1c67df75d1753770b9f3f09ceefa2" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.OptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ManualTicketVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.QRScanVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.CounterListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.AadharDetailsActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
